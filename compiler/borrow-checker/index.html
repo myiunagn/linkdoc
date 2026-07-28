@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/compiler/llvm-backend/">
+        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/compiler/borrow-checker/">
       
       
-        <link rel="prev" href="../c-backend/">
+        <link rel="prev" href="../wasm-backend/">
       
       
-        <link rel="next" href="../python-backend/">
+        <link rel="next" href="../cli/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>LLVM 后端 - Link 语言手册</title>
+        <title>借用检查器 - Link 语言手册</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#llvm-ir" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLVM 后端
+              借用检查器
             
           </span>
         </div>
@@ -1367,37 +1367,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLVM 后端
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../llvm-backend/" class="md-nav__link">
         
   
   
@@ -1413,198 +1386,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        特性
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        使用方法
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="使用方法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#llvm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        启用 LLVM 后端
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llvm-ir_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        生成 LLVM IR
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        编译为可执行文件
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#llvm-ir_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        生成的 LLVM IR 示例
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="生成的 LLVM IR 示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#link" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Link 源代码
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llvm-ir_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        生成的 LLVM IR
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        优化
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        依赖
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="依赖">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Windows
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linux-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Linux (Ubuntu)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        macOS
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        限制
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1670,10 +1451,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../borrow-checker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    借用检查器
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1689,6 +1497,270 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        所有权（Ownership）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-semantics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        移动语义（Move Semantics）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Copy 类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrowing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        借用（Borrowing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        借用规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="借用规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 1：同一时间，要么有一个可变借用，要么有任意数量的不可变借用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 2：借用的生命周期不能长于所有者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 3：不能在有借用的情况下移动所有权
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-after-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        use-after-move 检测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="use-after-move 检测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编译错误示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        函数返回与所有权
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见模式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 函数借用而不是获取所有权
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 可变借用修改值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 结构体字段的借用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作用域与借用结束
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要借用检查器？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        禁用借用检查器
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与其他语言的对比
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1810,33 +1882,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        特性
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        使用方法
+        核心概念
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="使用方法">
+    <nav class="md-nav" aria-label="核心概念">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#llvm" class="md-nav__link">
+  <a href="#ownership" class="md-nav__link">
     <span class="md-ellipsis">
       
-        启用 LLVM 后端
+        所有权（Ownership）
       
     </span>
   </a>
@@ -1844,10 +1905,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#llvm-ir_1" class="md-nav__link">
+  <a href="#move-semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        生成 LLVM IR
+        移动语义（Move Semantics）
       
     </span>
   </a>
@@ -1855,38 +1916,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#copy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        编译为可执行文件
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#llvm-ir_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        生成的 LLVM IR 示例
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="生成的 LLVM IR 示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#link" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Link 源代码
+        Copy 类型
       
     </span>
   </a>
@@ -1894,10 +1927,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#llvm-ir_3" class="md-nav__link">
+  <a href="#borrowing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        生成的 LLVM IR
+        借用（Borrowing）
       
     </span>
   </a>
@@ -1913,52 +1946,69 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        优化
+        借用规则
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="借用规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 1：同一时间，要么有一个可变借用，要么有任意数量的不可变借用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 2：借用的生命周期不能长于所有者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规则 3：不能在有借用的情况下移动所有权
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#use-after-move" class="md-nav__link">
     <span class="md-ellipsis">
       
-        依赖
+        use-after-move 检测
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="依赖">
+    <nav class="md-nav" aria-label="use-after-move 检测">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Windows
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#linux-ubuntu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Linux (Ubuntu)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        macOS
+        编译错误示例
       
     </span>
   </a>
@@ -1974,7 +2024,101 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        限制
+        函数返回与所有权
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见模式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 函数借用而不是获取所有权
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 可变借用修改值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 结构体字段的借用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        作用域与借用结束
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要借用检查器？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        禁用借用检查器
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与其他语言的对比
       
     </span>
   </a>
@@ -2001,105 +2145,297 @@
   
 
 
-<h1 id="llvm-ir">LLVM IR 后端<a class="headerlink" href="#llvm-ir" title="Permanent link">&para;</a></h1>
-<p>Link 编译器支持将 Link 源代码编译为 LLVM IR，然后通过 LLVM 工具链生成原生可执行文件。</p>
-<h2 id="_1">特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">借用检查器<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Link v0.2.0 内置了借用检查器（Borrow Checker），在编译时自动执行，用于保证内存安全，避免常见的内存错误如 use-after-move、双重释放等。</p>
+<h2 id="_2">核心概念<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="ownership">所有权（Ownership）<a class="headerlink" href="#ownership" title="Permanent link">&para;</a></h3>
+<p>Link 中的每个值都有且仅有一个**所有者**（owner），当所有者离开作用域时，值会被自动释放。</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>fn main() {
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    let s = &quot;hello&quot;;  // s 是字符串的所有者
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    println(s);       // 使用 s
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>}  // s 离开作用域，字符串被释放
+</code></pre></div>
+<h3 id="move-semantics">移动语义（Move Semantics）<a class="headerlink" href="#move-semantics" title="Permanent link">&para;</a></h3>
+<p>默认情况下，赋值和函数传参会**移动**所有权，原变量不再可用：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>fn main() {
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    let s1 = &quot;hello&quot;;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    let s2 = s1;      // s1 的所有权移动给 s2
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    // println(s1);   // 错误: use after move - s1 已不再拥有值
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    println(s2);      // 正确: s2 现在拥有值
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>}
+</code></pre></div>
+<h4 id="_3">函数传参的移动<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>fn take_ownership(s: str) {
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    println(s);
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>}  // s 离开作用域，值被释放
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>fn main() {
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    let s = &quot;hello&quot;;
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    take_ownership(s);  // s 的所有权移动到函数中
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    // println(s);      // 错误: use after move
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>}
+</code></pre></div>
+<h3 id="copy">Copy 类型<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h3>
+<p>基础类型（整数、浮点数、布尔值）是 <strong>Copy 类型</strong>，它们在赋值时会复制一份，而不是移动所有权：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fn main() {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    let x: i32 = 42;
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    let y = x;      // x 是 Copy 类型，复制一份给 y
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    println(x);     // 正确: x 仍然可用
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    println(y);     // 正确: y 是独立的副本
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>}
+</code></pre></div>
+<h4 id="copy_1">哪些类型是 Copy 的？<a class="headerlink" href="#copy_1" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
 <th>类别</th>
-<th>支持内容</th>
+<th>类型</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>基本类型</strong></td>
-<td>i64、f64、bool、指针</td>
+<td>整数</td>
+<td><code>i8</code>, <code>i16</code>, <code>i32</code>, <code>i64</code>, <code>u8</code>, <code>u16</code>, <code>u32</code>, <code>u64</code>, <code>usize</code></td>
 </tr>
 <tr>
-<td><strong>运算</strong></td>
-<td>算术(+ - * / %)、比较、逻辑、一元</td>
+<td>浮点数</td>
+<td><code>f32</code>, <code>f64</code></td>
 </tr>
 <tr>
-<td><strong>函数</strong></td>
-<td>声明、递归、参数、返回值</td>
+<td>布尔</td>
+<td><code>bool</code></td>
 </tr>
 <tr>
-<td><strong>控制流</strong></td>
-<td>if/else、while、for、loop</td>
-</tr>
-<tr>
-<td><strong>变量</strong></td>
-<td>let 声明、赋值</td>
-</tr>
-<tr>
-<td><strong>优化</strong></td>
-<td>LLVM PassManager 优化通道</td>
+<td>其他</td>
+<td>只包含 Copy 类型的 struct</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">使用方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="llvm">启用 LLVM 后端<a class="headerlink" href="#llvm" title="Permanent link">&para;</a></h3>
-<p>LLVM 后端使用条件编译，需要通过 feature 启用：</p>
-<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cargo<span class="w"> </span>build<span class="w"> </span>--features<span class="w"> </span>llvm-backend<span class="w"> </span>--release
+<div class="admonition note">
+<p class="admonition-title">字符串不是 Copy 类型</p>
+<p><code>str</code> 字符串类型不是 Copy 类型，因为它是堆分配的，复制开销较大。</p>
+</div>
+<h3 id="borrowing">借用（Borrowing）<a class="headerlink" href="#borrowing" title="Permanent link">&para;</a></h3>
+<p>借用允许你使用值而不获取其所有权，通过引用（<code>&amp;T</code> 和 <code>&amp;mut T</code>）实现。</p>
+<h4 id="t">不可变借用（&amp;T）<a class="headerlink" href="#t" title="Permanent link">&para;</a></h4>
+<p>不可变借用允许读取值，但不能修改：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>fn print_length(s: &amp;str) {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    println(&quot;length:&quot;, len(*s));
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>}  // s 离开作用域，但不释放值，因为它只是借用
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>fn main() {
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    let s = &quot;hello&quot;;
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    print_length(&amp;s);    // 不可变借用，s 的所有权仍在 main 中
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    println(s);          // 正确: s 仍然拥有值
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>}
 </code></pre></div>
-<h3 id="llvm-ir_1">生成 LLVM IR<a class="headerlink" href="#llvm-ir_1" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>link<span class="w"> </span>compile<span class="w"> </span>myfile.link<span class="w"> </span>--backend<span class="w"> </span>llvm<span class="w"> </span>--emit-ir
+<h4 id="mut-t">可变借用（&amp;mut T）<a class="headerlink" href="#mut-t" title="Permanent link">&para;</a></h4>
+<p>可变借用允许修改值，但同一时间只能有一个可变借用：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>fn append_hello(s: &amp;mut str) {
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    *s = *s + &quot; world&quot;;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>}
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>fn main() {
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    let mut s = &quot;hello&quot;;
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    append_hello(&amp;mut s);  // 可变借用
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    println(s);            // 输出: hello world
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>}
 </code></pre></div>
-<h3 id="_3">编译为可执行文件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>link<span class="w"> </span>compile<span class="w"> </span>myfile.link<span class="w"> </span>--backend<span class="w"> </span>llvm
+<h2 id="_4">借用规则<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>借用检查器遵循以下核心规则：</p>
+<h3 id="1">规则 1：同一时间，要么有一个可变借用，要么有任意数量的不可变借用<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>fn main() {
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    let mut s = &quot;hello&quot;;
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    // 正确: 多个不可变借用
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    let r1 = &amp;s;
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    let r2 = &amp;s;
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    println(r1, r2);
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    // 正确: 一个可变借用
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    let r3 = &amp;mut s;
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    // let r4 = &amp;mut s;  // 错误: 不能同时有两个可变借用
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    // 错误: 不可变借用和可变借用不能同时存在
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    // let r5 = &amp;s;
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    // let r6 = &amp;mut s;
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>}
 </code></pre></div>
-<h2 id="llvm-ir_2">生成的 LLVM IR 示例<a class="headerlink" href="#llvm-ir_2" title="Permanent link">&para;</a></h2>
-<h3 id="link">Link 源代码<a class="headerlink" href="#link" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fn add(a: i64, b: i64) -&gt; i64 {
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    return a + b;
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>}
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>add(2, 3)
+<h3 id="2">规则 2：借用的生命周期不能长于所有者<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>fn dangling() -&gt; &amp;str {
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    let s = &quot;hello&quot;;
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    return &amp;s;  // 错误: s 会在函数结束时释放，返回悬垂引用
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>}
 </code></pre></div>
-<h3 id="llvm-ir_3">生成的 LLVM IR<a class="headerlink" href="#llvm-ir_3" title="Permanent link">&para;</a></h3>
-<div class="language-llvm highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">; ModuleID = &#39;link_module&#39;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">source_filename</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;link_module&quot;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">define</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="vg">@add</span><span class="p">(</span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%0</span><span class="p">,</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nl">entry:</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nv">%a</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">alloca</span><span class="w"> </span><span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nv">%b</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">alloca</span><span class="w"> </span><span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="k">store</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%0</span><span class="p">,</span><span class="w"> </span><span class="kt">ptr</span><span class="w"> </span><span class="nv">%a</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="k">store</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%1</span><span class="p">,</span><span class="w"> </span><span class="kt">ptr</span><span class="w"> </span><span class="nv">%b</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nv nv-Anonymous">%2</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">load</span><span class="w"> </span><span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="kt">ptr</span><span class="w"> </span><span class="nv">%a</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="nv nv-Anonymous">%3</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">load</span><span class="w"> </span><span class="kt">i64</span><span class="p">,</span><span class="w"> </span><span class="kt">ptr</span><span class="w"> </span><span class="nv">%b</span><span class="p">,</span><span class="w"> </span><span class="k">align</span><span class="w"> </span><span class="m">8</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">  </span><span class="nv nv-Anonymous">%4</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="k">nsw</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%2</span><span class="p">,</span><span class="w"> </span><span class="nv nv-Anonymous">%3</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">  </span><span class="k">ret</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="nv nv-Anonymous">%4</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="k">define</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="vg">@main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nl">entry:</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">  </span><span class="nv nv-Anonymous">%0</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="vg">@add</span><span class="p">(</span><span class="kt">i64</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="m">3</span><span class="p">)</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">  </span><span class="k">ret</span><span class="w"> </span><span class="kt">i64</span><span class="w"> </span><span class="m">0</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="p">}</span>
+<h3 id="3">规则 3：不能在有借用的情况下移动所有权<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>fn main() {
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    let s = &quot;hello&quot;;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    let r = &amp;s;       // 借用 s
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    // let s2 = s;    // 错误: 不能在有借用时移动 s
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    println(r);       // 借用在这里结束
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>}
 </code></pre></div>
-<h2 id="_4">优化<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>LLVM 后端使用 LLVM PassManager 进行优化，默认使用 Aggressive 优化等级。</p>
-<h2 id="_5">依赖<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>LLVM 后端需要系统安装 LLVM：</p>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
-<div class="language-powershell highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">winget</span> <span class="n">install</span> <span class="n">LLVM</span><span class="p">.</span><span class="n">LLVM</span>
+<h2 id="use-after-move">use-after-move 检测<a class="headerlink" href="#use-after-move" title="Permanent link">&para;</a></h2>
+<p>借用检查器会在编译时检测 use-after-move 错误：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>struct Person {
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    name: str,
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    age: i32,
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>}
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>fn main() {
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    let p1 = Person { name: &quot;Alice&quot;, age: 30 };
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    let p2 = p1;              // p1 的所有权移动给 p2
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    // println(p1.name);      // 错误: use after move
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    println(p2.name);         // 正确
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>}
 </code></pre></div>
-<h3 id="linux-ubuntu">Linux (Ubuntu)<a class="headerlink" href="#linux-ubuntu" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>llvm
+<h3 id="_5">编译错误示例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>当你尝试使用已移动的值时，编译器会报错：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>error: use of moved value: `s`
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a> --&gt; test.link:5:12
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  |
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>3 |     let s2 = s1;
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  |              -- value moved here
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>4 |
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>5 |     println(s1);
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  |             ^^ value used here after move
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>  |
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>  = note: `str` does not implement `Copy`
 </code></pre></div>
-<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>brew<span class="w"> </span>install<span class="w"> </span>llvm
+<h2 id="_6">函数返回与所有权<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>函数可以返回值，将所有权转移给调用者：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>fn create_string() -&gt; str {
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    let s = &quot;hello&quot;;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    return s;  // s 的所有权转移给调用者
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>}  // s 离开作用域，但值已被返回，不会被释放
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>fn main() {
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    let s = create_string();  // 获得所有权
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    println(s);               // 正确
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>}  // s 离开作用域，值被释放
 </code></pre></div>
-<h2 id="_6">限制<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>当前 LLVM 后端暂不支持：
-- struct/enum 复合类型
-- 列表
-- <code>stream&lt;T&gt;</code> 类型
-- <code>flow</code> 声明块
-- <code>async/await</code> 异步编程
-- match 模式匹配</p>
+<h2 id="_7">常见模式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 函数借用而不是获取所有权<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>如果函数不需要获取值的所有权，应该使用借用：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>// 推荐: 使用借用，不获取所有权
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>fn length(s: &amp;str) -&gt; i64 {
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    return len(*s);
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>}
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>// 不推荐: 获取所有权，调用者无法再使用
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>fn length_own(s: str) -&gt; i64 {
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    return len(s);
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>}
+</code></pre></div>
+<h3 id="2_1">2. 可变借用修改值<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>fn increment(x: &amp;mut i32) {
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    *x = *x + 1;
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>}
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>fn main() {
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    let mut count: i32 = 0;
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    increment(&amp;mut count);
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    println(count);  // 1
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>}
+</code></pre></div>
+<h3 id="3_1">3. 结构体字段的借用<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>struct Point {
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    x: i32,
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    y: i32,
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>}
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>fn main() {
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    let p = Point { x: 10, y: 20 };
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>    let x_ref = &amp;p.x;    // 借用结构体的单个字段
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    println(*x_ref);     // 10
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>}
+</code></pre></div>
+<h2 id="_8">作用域与借用结束<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>借用的生命周期由作用域决定，借用在最后一次使用后结束：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>fn main() {
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    let mut s = &quot;hello&quot;;
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    let r1 = &amp;s;         // 不可变借用开始
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    println(r1);         // r1 在这里最后一次使用
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    let r2 = &amp;mut s;     // 正确: r1 的借用已经结束
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    *r2 = *r2 + &quot; world&quot;;
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    println(r2);
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>}
+</code></pre></div>
+<h2 id="_9">为什么需要借用检查器？<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>借用检查器在编译时保证内存安全，避免了以下常见错误：</p>
+<ol>
+<li><strong>use-after-move</strong>：使用已经移动所有权的值</li>
+<li><strong>双重释放</strong>：同一个值被释放两次</li>
+<li><strong>悬垂引用</strong>：引用指向已经释放的内存</li>
+<li><strong>数据竞争</strong>：多个可变引用同时修改数据</li>
+</ol>
+<p>这些错误在 C/C++ 中是运行时错误，难以调试，但在 Link 中会在编译时被捕获。</p>
+<h2 id="_10">禁用借用检查器<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>如果确定不需要借用检查器（例如快速原型开发），可以使用 <code>--no-borrow-check</code> 选项禁用：</p>
+<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>link<span class="w"> </span>compile<span class="w"> </span>myfile.link<span class="w"> </span>--no-borrow-check
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">不建议禁用</p>
+<p>禁用借用检查器会失去编译时内存安全保证，可能导致运行时内存错误。建议仅在调试或快速原型时临时使用。</p>
+</div>
+<h2 id="_11">与其他语言的对比<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>Link</th>
+<th>Rust</th>
+<th>C++</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所有权系统</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>借用检查器</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>移动语义</td>
+<td>✓ 默认</td>
+<td>✓ 默认</td>
+<td>✓ 需 <code>std::move</code></td>
+<td>✗</td>
+</tr>
+<tr>
+<td>Copy 类型</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>编译时保证</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
+<td>✗</td>
+</tr>
+<tr>
+<td>垃圾回收</td>
+<td>✗</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/introduction/">
+        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/compiler/python-backend/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../llvm-backend/">
       
       
-        <link rel="next" href="../installation/">
+        <link rel="next" href="../wasm-backend/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>介绍 - Link 语言手册</title>
+        <title>Python 后端 - Link 语言手册</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/styles.css">
+      <link rel="stylesheet" href="../../assets/styles.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#python" class="md-skip">
           跳转至
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="Link 语言手册" class="md-header__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
+    <a href="../.." title="Link 语言手册" class="md-header__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              介绍
+              Python 后端
             
           </span>
         </div>
@@ -232,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -249,13 +249,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
           
   
   
@@ -277,7 +275,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../basics/types/" class="md-tabs__link">
+        <a href="../../basics/types/" class="md-tabs__link">
           
   
   
@@ -299,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../ffi/overview/" class="md-tabs__link">
+        <a href="../../ffi/overview/" class="md-tabs__link">
           
   
   
@@ -317,11 +315,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../compiler/c-backend/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../c-backend/" class="md-tabs__link">
           
   
   
@@ -341,7 +341,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../examples/" class="md-tabs__link">
+      <a href="../../examples/" class="md-tabs__link">
         
   
   
@@ -360,7 +360,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../spec/" class="md-tabs__link">
+      <a href="../../spec/" class="md-tabs__link">
         
   
   
@@ -395,7 +395,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Link 语言手册" class="md-nav__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
+    <a href="../.." title="Link 语言手册" class="md-nav__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg>
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -449,10 +449,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -468,22 +466,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -501,7 +498,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -516,37 +513,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    介绍
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   
@@ -562,142 +532,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#link" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Link 是什么
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一句话定位
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#link_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        为什么需要 Link
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="为什么需要 Link">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        问题:多语言协作的痛点
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#link_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Link 的答案
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        核心抽象
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        当前版本能做什么
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        设计哲学
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        路线图
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一步
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -710,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -738,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         
   
   
@@ -766,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../repl/" class="md-nav__link">
+      <a href="../../repl/" class="md-nav__link">
         
   
   
@@ -873,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/types/" class="md-nav__link">
+      <a href="../../basics/types/" class="md-nav__link">
         
   
   
@@ -901,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/operators/" class="md-nav__link">
+      <a href="../../basics/operators/" class="md-nav__link">
         
   
   
@@ -929,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/control-flow/" class="md-nav__link">
+      <a href="../../basics/control-flow/" class="md-nav__link">
         
   
   
@@ -957,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/functions/" class="md-nav__link">
+      <a href="../../basics/functions/" class="md-nav__link">
         
   
   
@@ -985,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/collections/" class="md-nav__link">
+      <a href="../../basics/collections/" class="md-nav__link">
         
   
   
@@ -1013,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/composite-types/" class="md-nav__link">
+      <a href="../../basics/composite-types/" class="md-nav__link">
         
   
   
@@ -1041,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/flow/" class="md-nav__link">
+      <a href="../../basics/flow/" class="md-nav__link">
         
   
   
@@ -1069,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/async/" class="md-nav__link">
+      <a href="../../basics/async/" class="md-nav__link">
         
   
   
@@ -1178,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/overview/" class="md-nav__link">
+      <a href="../../ffi/overview/" class="md-nav__link">
         
   
   
@@ -1206,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/c/" class="md-nav__link">
+      <a href="../../ffi/c/" class="md-nav__link">
         
   
   
@@ -1234,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/python/" class="md-nav__link">
+      <a href="../../ffi/python/" class="md-nav__link">
         
   
   
@@ -1262,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/cpp/" class="md-nav__link">
+      <a href="../../ffi/cpp/" class="md-nav__link">
         
   
   
@@ -1290,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/wasm/" class="md-nav__link">
+      <a href="../../ffi/wasm/" class="md-nav__link">
         
   
   
@@ -1318,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/java/" class="md-nav__link">
+      <a href="../../ffi/java/" class="md-nav__link">
         
   
   
@@ -1346,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/html/" class="md-nav__link">
+      <a href="../../ffi/html/" class="md-nav__link">
         
   
   
@@ -1374,7 +1208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/process/" class="md-nav__link">
+      <a href="../../ffi/process/" class="md-nav__link">
         
   
   
@@ -1402,7 +1236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ffi/bindgen/" class="md-nav__link">
+      <a href="../../ffi/bindgen/" class="md-nav__link">
         
   
   
@@ -1434,8 +1268,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1455,21 +1291,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1487,7 +1324,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1505,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/c-backend/" class="md-nav__link">
+      <a href="../c-backend/" class="md-nav__link">
         
   
   
@@ -1533,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/llvm-backend/" class="md-nav__link">
+      <a href="../llvm-backend/" class="md-nav__link">
         
   
   
@@ -1558,10 +1395,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../compiler/python-backend/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python 后端
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1577,6 +1441,148 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        特性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成 Python 代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直接运行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成的 Python 代码示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成的 Python 代码示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link 源代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成的 Python 代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-ffi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python FFI 互操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适用场景
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        限制
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1589,7 +1595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/wasm-backend/" class="md-nav__link">
+      <a href="../wasm-backend/" class="md-nav__link">
         
   
   
@@ -1617,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/borrow-checker/" class="md-nav__link">
+      <a href="../borrow-checker/" class="md-nav__link">
         
   
   
@@ -1645,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
@@ -1680,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../examples/" class="md-nav__link">
+      <a href="../../examples/" class="md-nav__link">
         
   
   
@@ -1707,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../spec/" class="md-nav__link">
+      <a href="../../spec/" class="md-nav__link">
         
   
   
@@ -1754,10 +1760,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#link" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Link 是什么
+        特性
       
     </span>
   </a>
@@ -1768,41 +1774,30 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一句话定位
+        使用方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成 Python 代码
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#link_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        为什么需要 Link
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="为什么需要 Link">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        问题:多语言协作的痛点
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#link_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Link 的答案
+        直接运行
       
     </span>
   </a>
@@ -1815,10 +1810,60 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成的 Python 代码示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="生成的 Python 代码示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link 源代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        生成的 Python 代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-ffi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python FFI 互操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心抽象
+        适用场景
       
     </span>
   </a>
@@ -1829,40 +1874,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        当前版本能做什么
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        设计哲学
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        路线图
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一步
+        限制
       
     </span>
   </a>
@@ -1889,284 +1901,182 @@
   
 
 
-<h1 id="_1">介绍<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="link">Link 是什么<a class="headerlink" href="#link" title="Permanent link">&para;</a></h2>
-<p><strong>Link 是一门专用于"互联"的静态类型声明式数据流语言。</strong></p>
-<ul>
-<li>以多语言互联为第一切入点</li>
-<li>延展到游戏后端与 IoT 设备互联</li>
-<li>多后端编译: C / LLVM / Python / WASM</li>
-<li>当前 v0.2.0 版本,支持完整编译、借用检查、LSP 语言服务器</li>
-</ul>
-<h2 id="_2">一句话定位<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>SQL 之于数据库,Link 之于互联。</p>
-</blockquote>
+<h1 id="python">Python 代码生成后端<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<p>Link 编译器支持将 Link 源代码编译为 Python 代码，然后通过 Python 解释器直接运行。</p>
+<h2 id="_1">特性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>维度</th>
-<th>类比</th>
+<th>类别</th>
+<th>支持内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>领域定位</td>
-<td>SQL 之于数据库,Link 之于互联</td>
+<td><strong>基本类型</strong></td>
+<td>i8/i16/i32/i64/u8/u16/u32/u64/usize/f32/f64/bool/str/none</td>
 </tr>
 <tr>
-<td>范式</td>
-<td>Terraform 的声明式 + 流式计算 + C++ 的类型严谨</td>
+<td><strong>字面量</strong></td>
+<td>整数、浮点数、字符串、布尔值、none、列表</td>
 </tr>
 <tr>
-<td>编译</td>
-<td>Rust 的 LLVM 路径</td>
+<td><strong>运算</strong></td>
+<td>算术(+ - * / %)、比较(== != &lt; &gt; &lt;= &gt;=)、逻辑(&amp;&amp; || !)、一元(- !)</td>
 </tr>
 <tr>
-<td>语言互联</td>
-<td>类似 SWIG / Protobuf,但作为一等语言而非工具</td>
-</tr>
-</tbody>
-</table>
-<h2 id="link_1">为什么需要 Link<a class="headerlink" href="#link_1" title="Permanent link">&para;</a></h2>
-<h3 id="_3">问题:多语言协作的痛点<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>现代工程普遍存在多语言协作场景:</p>
-<ul>
-<li><strong>后端</strong>:Go/Rust/Java 写业务,C/C++ 写性能模块,Python 写算法/ML</li>
-<li><strong>游戏</strong>:C++ 引擎 + Lua 脚本 + Python 工具链 + Go 后端</li>
-<li><strong>IoT</strong>:C 固件 + Python 上位机 + JS 配网</li>
-</ul>
-<p>现有方案的问题:</p>
-<ol>
-<li>SWIG / Protobuf 是**工具**而非语言,胶水代码散落各处</li>
-<li>不同语言间通信要起 RPC / IPC,有序列化开销</li>
-<li>类型系统割裂,跨语言重构困难</li>
-</ol>
-<h3 id="link_2">Link 的答案<a class="headerlink" href="#link_2" title="Permanent link">&para;</a></h3>
-<p>把"互联"做成**一等语言特性**:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>extern &quot;C&quot;      { fn abs(n: i32) -&gt; i32; }
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>extern &quot;python&quot; module &quot;math&quot; { fn sqrt(x: f64) -&gt; f64; }
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>extern &quot;C++&quot;    module &quot;engine.dll&quot; { fn render() -&gt; i32; }
-</code></pre></div>
-<ul>
-<li>一门语言,统一类型系统</li>
-<li>编译期检查所有跨语言调用签名</li>
-<li>运行时直接走 C ABI / libpython,零序列化开销</li>
-<li>未来 <code>stream&lt;T&gt;</code> 让数据自动跨语言流动</li>
-</ul>
-<h2 id="_4">核心抽象<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>概念</th>
-<th>说明</th>
-<th>状态</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>stream&lt;T&gt;</code></td>
-<td>数据流,Link 的灵魂</td>
-<td>:material-check-circle:{.green} 已实现</td>
+<td><strong>变量</strong></td>
+<td>let 声明（含类型注解）、赋值</td>
 </tr>
 <tr>
-<td><code>endpoint</code></td>
-<td>连接端点(设备/玩家/服务)</td>
-<td>:material-clock-outline:{.yellow} 规划中</td>
+<td><strong>函数</strong></td>
+<td>声明、递归、参数、返回值、匿名函数</td>
 </tr>
 <tr>
-<td><code>group</code></td>
-<td>群组(房间/网关/集群)</td>
-<td>:material-clock-outline:{.yellow} 规划中</td>
+<td><strong>控制流</strong></td>
+<td>if/else、while、for、loop、break、continue</td>
 </tr>
 <tr>
-<td><code>extern</code> / <code>export</code></td>
-<td>多语言互操作</td>
-<td>:material-check-circle:{.green} 已实现</td>
+<td><strong>复合类型</strong></td>
+<td>struct 定义/初始化/字段访问、enum（带/不带 payload）</td>
 </tr>
 <tr>
-<td><code>domain</code></td>
-<td>游戏后端域类型</td>
-<td>:material-check-circle:{.green} 已实现</td>
+<td><strong>模式匹配</strong></td>
+<td>match 语句（通配符、字面量、绑定、枚举变体）</td>
 </tr>
 <tr>
-<td>借用检查器</td>
-<td>所有权与内存安全</td>
-<td>:material-check-circle:{.green} 已实现</td>
+<td><strong>列表</strong></td>
+<td>字面量、索引访问、迭代</td>
 </tr>
 <tr>
-<td>LSP 语言服务器</td>
-<td>编辑器智能支持</td>
-<td>:material-check-circle:{.green} 已实现</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_5">当前版本能做什么<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>v0.2.0 已实现:</p>
-<ul>
-<li>基本类型:<code>i8</code>/<code>i16</code>/<code>i32</code>/<code>i64</code>/<code>u8</code>/<code>u16</code>/<code>u32</code>/<code>u64</code>/<code>usize</code> / <code>f32</code>/<code>f64</code> / <code>str</code> / <code>bool</code> / <code>none</code> / <code>list&lt;T&gt;</code></li>
-<li>运算符:算术、比较、逻辑、管道运算符 <code>|</code></li>
-<li>控制流:<code>if/else</code> / <code>while</code> / <code>for</code> / <code>loop</code> / <code>break</code> / <code>continue</code></li>
-<li>函数:声明、递归、闭包作用域</li>
-<li>内置函数:<code>print</code> / <code>println</code> / <code>len</code></li>
-<li>列表:字面量、索引、嵌套</li>
-<li><strong>复合类型</strong>:struct / enum + match 模式匹配</li>
-<li><strong>数据流</strong>: <code>stream&lt;T&gt;</code> + 管道运算符</li>
-<li><strong>声明式</strong>: <code>flow</code> 声明块</li>
-<li><strong>异步编程</strong>: async/await</li>
-<li><strong>FFI</strong>:<ul>
-<li>全球 12 种编程语言: C / C++ / Python / WASM / Java / JS / Go / Rust / C# / PHP / Ruby / Swift / Kotlin</li>
-<li>bindgen: C/Python/TypeScript 绑定生成</li>
-</ul>
-</li>
-<li><strong>编译后端</strong>:<ul>
-<li>C 后端:完整 C 代码生成,优化等级 O0-O3</li>
-<li>LLVM 后端: LLVM IR 生成(条件编译)</li>
-<li>Python 后端: 生成 Python 代码</li>
-<li>WASM 后端: 生成 WAT 格式代码</li>
-</ul>
-</li>
-<li><strong>优化</strong>: 常量折叠、死代码消除</li>
-<li><strong>借用检查器</strong>: 所有权跟踪、移动语义、Copy 类型、use-after-move 检测</li>
-<li><strong>LSP 语言服务器</strong>: 诊断、补全、悬停、跳转、符号大纲</li>
-<li><strong>游戏后端域类型</strong>: domain 语法、WebSocket、房间系统、帧同步</li>
-<li>运行模式:<code>link run &lt;file&gt;</code> 文件执行,<code>link repl</code> 交互式 REPL,<code>link compile</code> 编译</li>
-</ul>
-<h2 id="_6">设计哲学<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>连接为一等公民</strong> —— <code>stream&lt;T&gt;</code> / <code>endpoint</code> / <code>group</code> 是语言内置类型,不是库里的 class</li>
-<li><strong>流是默认执行模型</strong> —— 数据从源到汇自动调度,无需手写并发</li>
-<li><strong>声明优先,无副作用</strong> —— 描述"要什么",不描述"怎么做"</li>
-<li><strong>多语言原生互通</strong> —— Link 不孤立存在,天然是其他语言的胶水层</li>
-</ol>
-<h2 id="_7">路线图<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>阶段</th>
-<th>内容</th>
-<th>状态</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Phase 0</td>
-<td>骨架:Lexer + Parser + Interpreter</td>
-<td>:material-check-circle:{.green} 完成</td>
+<td><strong>数据流</strong></td>
+<td><code>stream&lt;T&gt;</code> + 管道运算符 <code>\|</code></td>
 </tr>
 <tr>
-<td><strong>Phase 1</strong></td>
-<td><strong>多语言互联 + 语言特性</strong></td>
-<td>:material-check-circle:{.green} <strong>全部完成</strong></td>
+<td><strong>异步编程</strong></td>
+<td>async/await</td>
 </tr>
 <tr>
-<td>Phase 1.1</td>
-<td>C FFI 基础</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.2</td>
-<td>Python / C++ FFI</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.3</td>
-<td><code>stream&lt;T&gt;</code> 数据流核心类型 + 管道运算符</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.4</td>
-<td>多语言 FFI (12 种语言)</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.5</td>
-<td>struct/enum + match 模式匹配</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.6</td>
-<td>bindgen: C/Python/TypeScript 绑定生成</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 1.7</td>
+<td><strong>声明式</strong></td>
 <td>flow 声明块</td>
-<td>:material-check-circle:{.green} 完成</td>
 </tr>
 <tr>
-<td>Phase 1.8</td>
-<td>async/await 异步编程</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td><strong>Phase 2</strong></td>
-<td><strong>编译器 + 工具链</strong></td>
-<td>:material-check-circle:{.green} <strong>全部完成</strong></td>
-</tr>
-<tr>
-<td>Phase 2.1</td>
-<td>C 后端:完整 C 代码生成</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.2</td>
-<td>LLVM 后端: LLVM IR 生成</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.3</td>
-<td>Python 后端: 生成 Python 代码</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.4</td>
-<td>WASM 后端: 生成 WAT 格式代码</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.5</td>
-<td>类型检查器 (54 个测试)</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.6</td>
-<td>常量折叠优化</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.7</td>
-<td>死代码消除</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.8</td>
-<td>借用检查器: 所有权跟踪、use-after-move 检测</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.9</td>
-<td>LSP 语言服务器: 诊断、补全、悬停、跳转、符号大纲</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 2.10</td>
-<td>游戏后端域类型: domain 语法、WebSocket、房间系统、帧同步</td>
-<td>:material-check-circle:{.green} 完成</td>
-</tr>
-<tr>
-<td>Phase 3</td>
-<td><code>endpoint</code> / <code>group</code> IoT 抽象</td>
-<td>:material-clock-outline:{.yellow} 规划中</td>
+<td><strong>FFI</strong></td>
+<td>extern "python" 声明</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_8">下一步<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_2">使用方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="python_1">生成 Python 代码<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>link<span class="w"> </span>compile<span class="w"> </span>myfile.link<span class="w"> </span>--backend<span class="w"> </span>python<span class="w"> </span>-o<span class="w"> </span>output.py
+</code></pre></div>
+<p>也可以使用简写：</p>
+<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>link<span class="w"> </span>compile<span class="w"> </span>myfile.link<span class="w"> </span>--backend<span class="w"> </span>py<span class="w"> </span>-o<span class="w"> </span>output.py
+</code></pre></div>
+<h3 id="_3">直接运行<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>生成的 Python 代码可以直接用 Python 解释器运行：</p>
+<div class="language-bash highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>output.py
+</code></pre></div>
+<h2 id="python_2">生成的 Python 代码示例<a class="headerlink" href="#python_2" title="Permanent link">&para;</a></h2>
+<h3 id="link">Link 源代码<a class="headerlink" href="#link" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fn fib(n: i64) -&gt; i64 {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    if n &lt; 2 {
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        return n;
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    }
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    return fib(n - 1) + fib(n - 2);
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>}
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>struct Point {
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    x: i32,
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    y: i32,
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>}
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>let p = Point { x: 1, y: 2 };
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>println(&quot;p.x + p.y =&quot;, p.x + p.y);
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>println(&quot;fib(10) =&quot;, fib(10));
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>// stream&lt;T&gt; + 管道运算符
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>let result = stream([1, 2, 3, 4, 5])
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    | map(fn(x: i64) -&gt; i64 { return x * 2; })
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    | filter(fn(x: i64) -&gt; bool { return x &gt; 5; })
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    | collect();
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>println(&quot;stream result =&quot;, result);
+</code></pre></div>
+<h3 id="python_3">生成的 Python 代码<a class="headerlink" href="#python_3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="k">return</span> <span class="n">n</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">Point</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;p.x + p.y =&quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fib(10) =&quot;</span><span class="p">,</span> <span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c1"># stream&lt;T&gt; + 管道运算符</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">_link_stream_map</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">stream</span><span class="p">]</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="k">def</span><span class="w"> </span><span class="nf">_link_stream_filter</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">func</span><span class="p">):</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">stream</span> <span class="k">if</span> <span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">def</span><span class="w"> </span><span class="nf">_link_stream_collect</span><span class="p">(</span><span class="n">stream</span><span class="p">):</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="k">return</span> <span class="n">stream</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="n">result</span> <span class="o">=</span> <span class="n">_link_stream_collect</span><span class="p">(</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>    <span class="n">_link_stream_filter</span><span class="p">(</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>        <span class="n">_link_stream_map</span><span class="p">(</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>            <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>            <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>        <span class="p">),</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>        <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>    <span class="p">)</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="p">)</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;stream result =&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="python-ffi">Python FFI 互操作<a class="headerlink" href="#python-ffi" title="Permanent link">&para;</a></h2>
+<p>Python 后端支持直接调用 Python 模块和函数：</p>
+<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>extern &quot;python&quot; module &quot;math&quot; {
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    fn sqrt(x: f64) -&gt; f64;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    fn sin(x: f64) -&gt; f64;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>}
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>extern &quot;python&quot; module &quot;os.path&quot; {
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    fn exists(path: str) -&gt; bool;
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>}
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>let x = sqrt(16.0);
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>let y = sin(3.14159 / 2.0);
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>println(&quot;sqrt(16) =&quot;, x);
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>println(&quot;sin(pi/2) =&quot;, y);
+</code></pre></div>
+<p>生成的 Python 代码会自动导入相应的模块：</p>
+<div class="language-python highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os.path</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">16.0</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">3.14159</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sqrt(16) =&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sin(pi/2) =&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="_4">适用场景<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Python 后端适合以下场景：</p>
 <ul>
-<li><a href="../installation/">安装 Link</a></li>
-<li><a href="../quickstart/">快速开始</a></li>
-<li><a href="../ffi/overview/">多语言互联概述</a></li>
+<li><strong>快速原型开发</strong>：利用 Python 丰富的生态系统快速验证想法</li>
+<li><strong>脚本编写</strong>：将 Link 作为更安全的 Python 替代品编写脚本</li>
+<li><strong>机器学习/数据科学</strong>：结合 NumPy、Pandas、TensorFlow 等库</li>
+<li><strong>教学与学习</strong>：生成的 Python 代码可读性高，便于理解 Link 的语义</li>
+<li><strong>跨语言胶水层</strong>：作为连接多种语言的中间层</li>
 </ul>
+<h2 id="_5">限制<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>当前 Python 后端暂不支持：
+- 借用检查器（Python 本身是 GC 语言）
+- 原生性能优化（依赖 Python 解释器性能）
+- 低级内存操作（指针、手动内存管理等）</p>
 
 
 
@@ -2235,10 +2145,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

@@ -61,6 +61,10 @@
          <lastmod>2026-07-28</lastmod>
     </url>
     <url>
+         <loc>https://myiunagn.github.io/linkdoc/compiler/borrow-checker/</loc>
+         <lastmod>2026-07-28</lastmod>
+    </url>
+    <url>
          <loc>https://myiunagn.github.io/linkdoc/compiler/c-backend/</loc>
          <lastmod>2026-07-28</lastmod>
     </url>
@@ -70,6 +74,14 @@
     </url>
     <url>
          <loc>https://myiunagn.github.io/linkdoc/compiler/llvm-backend/</loc>
+         <lastmod>2026-07-28</lastmod>
+    </url>
+    <url>
+         <loc>https://myiunagn.github.io/linkdoc/compiler/python-backend/</loc>
+         <lastmod>2026-07-28</lastmod>
+    </url>
+    <url>
+         <loc>https://myiunagn.github.io/linkdoc/compiler/wasm-backend/</loc>
          <lastmod>2026-07-28</lastmod>
     </url>
     <url>

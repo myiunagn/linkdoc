@@ -1277,6 +1277,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1367,6 +1373,90 @@
     
   
     LLVM 后端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compiler/python-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python 后端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compiler/wasm-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WASM 后端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compiler/borrow-checker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    借用检查器
   
 
     
@@ -2702,9 +2792,9 @@
 
 <h1 id="link">Link 语言设计规格说明书<a class="headerlink" href="#link" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>版本</strong>: v0.1 (首个正式版本)
-<strong>日期</strong>: 2026-07-27
-<strong>状态</strong>: Phase 1 + Phase 2.1-2.11 已完成</p>
+<p><strong>版本</strong>: v0.2
+<strong>日期</strong>: 2026-07-28
+<strong>状态</strong>: Phase 1 + Phase 2.1-2.15 已完成</p>
 </blockquote>
 <hr />
 <h2 id="1">第 1 章:定位与核心理念<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
@@ -3982,6 +4072,62 @@
 <li>e2e 集成测试通过子进程启动 <code>link lsp</code>,验证完整 JSON-RPC 协议栈</li>
 </ul>
 <p><strong>测试覆盖</strong>:17 个单元测试 + 7 个 e2e 集成测试,工作区总计 294 个测试全部通过</p>
+<h4 id="phase-215">Phase 2.15:游戏后端域类型 ✅<a class="headerlink" href="#phase-215" title="Permanent link">&para;</a></h4>
+<p><strong>目标</strong>:实现 <code>domain</code> 语法 + WebSocket 帧同步服务器,验证游戏后端域类型设计。</p>
+<p><strong>交付物</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>domain</code> 关键字</td>
+<td>Lexer/Parser/Interpreter 全链路支持 <code>domain Name { key: value }</code> 声明语法</td>
+</tr>
+<tr>
+<td>WebSocket 服务器</td>
+<td><code>tokio-tungstenite</code> 实现,支持浏览器/小程序客户端</td>
+</tr>
+<tr>
+<td>房间(Room)系统</td>
+<td>多房间隔离,动态创建,支持 join/leave/chat 消息</td>
+</tr>
+<tr>
+<td>实体(Entity)系统</td>
+<td>玩家(Player) + 道具(coin),含位置/速度/得分/HP 属性</td>
+</tr>
+<tr>
+<td>帧同步循环</td>
+<td>固定 tick rate(默认 60 FPS),每帧更新状态并广播 JSON 快照</td>
+</tr>
+<tr>
+<td>碰撞检测</td>
+<td>玩家与道具的圆形碰撞检测,拾取后加分并生成事件</td>
+</tr>
+<tr>
+<td>CLI 集成</td>
+<td><code>link game &lt;file.link&gt; [domain]</code> 子命令启动游戏服务器</td>
+</tr>
+<tr>
+<td>示例程序</td>
+<td><code>examples/game_server.link</code> + <code>examples/game_client.html</code> 完整 Demo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实现要点</strong>:</p>
+<ul>
+<li>Lexer 新增 <code>Domain</code> 关键字;Parser 新增 <code>Stmt::DomainDecl { name, config }</code> AST 节点</li>
+<li>Interpreter 将 <code>domain</code> 声明求值为 <code>Value::StructInstance</code>,字段即配置项</li>
+<li><code>game.rs</code> 实现三层架构:<code>GameState</code>(全局多房间) → <code>Room</code>(单房间状态) → <code>Player</code>/<code>Entity</code>(实体)</li>
+<li>WebSocket 消息协议:<code>join</code>/<code>input</code>/<code>chat</code>/<code>leave</code> 四种客户端消息;<code>state</code>/<code>joined</code> 两种服务端消息</li>
+<li>客户端输入驱动物理模拟:方向键 → <code>apply_input</code> → <code>update</code>(位置+摩擦力+边界约束)</li>
+<li>避免引入 <code>rand</code> 依赖,使用静态原子种子实现 LCG 伪随机数生成器</li>
+<li><code>config_from_link</code> 从解释器生成的 StructInstance 中解析 <code>GameServerConfig</code></li>
+</ul>
+<p><strong>测试覆盖</strong>:6 个单元测试(玩家移动/房间增删/碰撞拾取/多房间/配置解析/快照格式),工作区总计 300+ 测试全部通过</p>
 <h3 id="56-phase-2-12">5.6 Phase 2:编译期 + 游戏后端(约 12 周)<a class="headerlink" href="#56-phase-2-12" title="Permanent link">&para;</a></h3>
 <p><strong>目标</strong>:LLVM 编译上线,游戏后端域加入。</p>
 <p><strong>交付物</strong>:
