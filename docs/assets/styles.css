@@ -1,0 +1,78 @@
+/* Link 文档自定义样式 */
+
+/* 首页 hero 区域 */
+.md-typeset > h1:first-child {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* 代码块圆角与阴影 */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* 卡片网格更紧凑 */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 8px;
+}
+
+/* 表格紧凑化 */
+.md-typeset table:not([class]) {
+  font-size: 0.75rem;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.6rem 0.8rem;
+}
+
+/* Link 语言代码高亮主题增强 */
+.md-typeset .highlightlink,
+.md-typeset .highlight .link {
+  color: #3b82f6;
+}
+
+/* admonition 圆角 */
+.md-typeset .admonition {
+  border-radius: 6px;
+}
+
+/* 顶部导航 logo 文字加粗 */
+.md-header__title {
+  font-weight: 600;
+}
+
+/* 搜索结果更紧凑 */
+.md-search-result__item {
+  margin: 0.4rem 0;
+}
+
+/* 右上角仓库星标/Fork 统计 */
+.link-repo-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 0.7rem;
+  align-items: center;
+  opacity: 0.85;
+}
+
+.link-repo-stats span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.link-repo-stats svg {
+  opacity: 0.7;
+}
+
+/* 暗色模式下星标颜色 */
+[data-md-color-scheme="slate"] .link-repo-stats svg {
+  color: #fbbf24;
+}
+
+/* 亮色模式下星标颜色 */
+[data-md-color-scheme="default"] .link-repo-stats svg {
+  color: #f59e0b;
+}
