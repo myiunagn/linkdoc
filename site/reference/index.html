@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/basics/control-flow/">
+        <link rel="canonical" href="https://myiunagn.github.io/linkdoc/reference/">
       
       
-        <link rel="prev" href="../operators/">
+        <link rel="prev" href="../compiler/cli/">
       
       
-        <link rel="next" href="../functions/">
+        <link rel="next" href="builtins/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>控制流 - Link 语言手册</title>
+        <title>总览 - Link 语言手册</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/styles.css">
+      <link rel="stylesheet" href="../assets/styles.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="Link 语言手册" class="md-header__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
+    <a href=".." title="Link 语言手册" class="md-header__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              控制流
+              总览
             
           </span>
         </div>
@@ -232,7 +232,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -253,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../introduction/" class="md-tabs__link">
+        <a href="../introduction/" class="md-tabs__link">
           
   
   
@@ -271,13 +271,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../types/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../basics/types/" class="md-tabs__link">
           
   
   
@@ -299,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ffi/overview/" class="md-tabs__link">
+        <a href="../ffi/overview/" class="md-tabs__link">
           
   
   
@@ -321,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../compiler/c-backend/" class="md-tabs__link">
+        <a href="../compiler/c-backend/" class="md-tabs__link">
           
   
   
@@ -339,11 +337,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../reference/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -363,7 +363,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../examples/" class="md-tabs__link">
+      <a href="../examples/" class="md-tabs__link">
         
   
   
@@ -382,7 +382,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../spec/" class="md-tabs__link">
+      <a href="../spec/" class="md-tabs__link">
         
   
   
@@ -417,7 +417,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Link 语言手册" class="md-nav__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
+    <a href=".." title="Link 语言手册" class="md-nav__button md-logo" aria-label="Link 语言手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg>
@@ -447,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../introduction/" class="md-nav__link">
+      <a href="../introduction/" class="md-nav__link">
         
   
   
@@ -566,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
@@ -594,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstart/" class="md-nav__link">
+      <a href="../quickstart/" class="md-nav__link">
         
   
   
@@ -622,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repl/" class="md-nav__link">
+      <a href="../repl/" class="md-nav__link">
         
   
   
@@ -654,10 +654,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -681,22 +679,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -714,7 +711,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -732,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
+      <a href="../basics/types/" class="md-nav__link">
         
   
   
@@ -760,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operators/" class="md-nav__link">
+      <a href="../basics/operators/" class="md-nav__link">
         
   
   
@@ -785,37 +782,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    控制流
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../basics/control-flow/" class="md-nav__link">
         
   
   
@@ -831,232 +801,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#if-else-if-else" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        if / else if / else
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="if / else if / else">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        if 表达式
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        while 循环
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="while 循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break-continue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配合 break / continue
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        for 循环
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="for 循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break-continue_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配合 break / continue
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        loop 无限循环
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        break
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#continue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        continue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#return" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        return
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        嵌套循环
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="嵌套循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        break 只跳出最近一层
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        综合示例
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="综合示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fizzbuzz" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        FizzBuzz
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二分查找
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一步
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1069,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../basics/functions/" class="md-nav__link">
         
   
   
@@ -1097,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../collections/" class="md-nav__link">
+      <a href="../basics/collections/" class="md-nav__link">
         
   
   
@@ -1125,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../composite-types/" class="md-nav__link">
+      <a href="../basics/composite-types/" class="md-nav__link">
         
   
   
@@ -1153,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flow/" class="md-nav__link">
+      <a href="../basics/flow/" class="md-nav__link">
         
   
   
@@ -1181,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../async/" class="md-nav__link">
+      <a href="../basics/async/" class="md-nav__link">
         
   
   
@@ -1290,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/overview/" class="md-nav__link">
+      <a href="../ffi/overview/" class="md-nav__link">
         
   
   
@@ -1318,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/c/" class="md-nav__link">
+      <a href="../ffi/c/" class="md-nav__link">
         
   
   
@@ -1346,7 +1090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/python/" class="md-nav__link">
+      <a href="../ffi/python/" class="md-nav__link">
         
   
   
@@ -1374,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/cpp/" class="md-nav__link">
+      <a href="../ffi/cpp/" class="md-nav__link">
         
   
   
@@ -1402,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/wasm/" class="md-nav__link">
+      <a href="../ffi/wasm/" class="md-nav__link">
         
   
   
@@ -1430,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/java/" class="md-nav__link">
+      <a href="../ffi/java/" class="md-nav__link">
         
   
   
@@ -1458,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/html/" class="md-nav__link">
+      <a href="../ffi/html/" class="md-nav__link">
         
   
   
@@ -1486,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/process/" class="md-nav__link">
+      <a href="../ffi/process/" class="md-nav__link">
         
   
   
@@ -1514,7 +1258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ffi/bindgen/" class="md-nav__link">
+      <a href="../ffi/bindgen/" class="md-nav__link">
         
   
   
@@ -1617,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/c-backend/" class="md-nav__link">
+      <a href="../compiler/c-backend/" class="md-nav__link">
         
   
   
@@ -1645,7 +1389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/llvm-backend/" class="md-nav__link">
+      <a href="../compiler/llvm-backend/" class="md-nav__link">
         
   
   
@@ -1673,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/python-backend/" class="md-nav__link">
+      <a href="../compiler/python-backend/" class="md-nav__link">
         
   
   
@@ -1701,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/wasm-backend/" class="md-nav__link">
+      <a href="../compiler/wasm-backend/" class="md-nav__link">
         
   
   
@@ -1729,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/borrow-checker/" class="md-nav__link">
+      <a href="../compiler/borrow-checker/" class="md-nav__link">
         
   
   
@@ -1757,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../compiler/cli/" class="md-nav__link">
+      <a href="../compiler/cli/" class="md-nav__link">
         
   
   
@@ -1789,6 +1533,8 @@
       
   
   
+    
+  
   
   
     
@@ -1808,22 +1554,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../reference/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1841,13 +1588,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_6" id="__nav_6_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1867,7 +1614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/builtins/" class="md-nav__link">
+      <a href="builtins/" class="md-nav__link">
         
   
   
@@ -1895,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/std-math/" class="md-nav__link">
+      <a href="std-math/" class="md-nav__link">
         
   
   
@@ -1923,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/std-string/" class="md-nav__link">
+      <a href="std-string/" class="md-nav__link">
         
   
   
@@ -1958,7 +1705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/" class="md-nav__link">
+      <a href="../examples/" class="md-nav__link">
         
   
   
@@ -1985,7 +1732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../spec/" class="md-nav__link">
+      <a href="../spec/" class="md-nav__link">
         
   
   
@@ -2032,158 +1779,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#if-else-if-else" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        if / else if / else
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="if / else if / else">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        if 表达式
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        while 循环
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="while 循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break-continue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配合 break / continue
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        for 循环
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="for 循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break-continue_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        配合 break / continue
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        loop 无限循环
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        break
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#continue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        continue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#return" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        return
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        嵌套循环
+        内置函数
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="嵌套循环">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#break_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        break 只跳出最近一层
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2191,19 +1793,19 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        综合示例
+        标准库
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="综合示例">
+    <nav class="md-nav" aria-label="标准库">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fizzbuzz" class="md-nav__link">
+  <a href="#stdmath" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FizzBuzz
+        std::math
       
     </span>
   </a>
@@ -2211,10 +1813,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#stdstring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二分查找
+        std::string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        std::io
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stdcollections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        std::collections
       
     </span>
   </a>
@@ -2223,17 +1847,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        下一步
-      
-    </span>
-  </a>
   
 </li>
       
@@ -2257,180 +1870,265 @@
   
 
 
-<h1 id="_1">控制流<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="if-else-if-else">if / else if / else<a class="headerlink" href="#if-else-if-else" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let score = 85;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>if score &gt;= 90 {
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    println(&quot;优秀&quot;);
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>} else if score &gt;= 80 {
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    println(&quot;良好&quot;);
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>} else if score &gt;= 60 {
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    println(&quot;及格&quot;);
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>} else {
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    println(&quot;不及格&quot;);
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>}
-</code></pre></div>
-<h3 id="if">if 表达式<a class="headerlink" href="#if" title="Permanent link">&para;</a></h3>
-<p><code>if</code> 也可以作为表达式使用,必须有 <code>else</code> 分支:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>let x = 10;
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>let label = if x &gt; 0 { &quot;正数&quot; } else { &quot;非正&quot; };
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>println(label);
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">类型一致</p>
-<p><code>if</code> 表达式的两个分支必须返回相同类型,否则报错。</p>
-</div>
-<h2 id="while">while 循环<a class="headerlink" href="#while" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let i = 0;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>while i &lt; 5 {
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    println(&quot;i =&quot;, i);
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    i = i + 1;
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>}
-</code></pre></div>
-<h3 id="break-continue">配合 break / continue<a class="headerlink" href="#break-continue" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>let i = 0;
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>while true {
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    if i &gt;= 10 { break; }
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    i = i + 1;
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    if i % 2 == 0 { continue; }
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    println(&quot;奇数:&quot;, i);
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>}
-</code></pre></div>
-<h2 id="for">for 循环<a class="headerlink" href="#for" title="Permanent link">&para;</a></h2>
-<p><code>for</code> 是范围式循环,<strong>左闭右开</strong> <code>[start, end)</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>// 0, 1, 2 (不含 3)
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>for i in 0..3 {
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    println(i);
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>}
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>// 5, 6, 7, 8, 9
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>for n in 5..10 {
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    println(n);
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>}
-</code></pre></div>
-<h3 id="break-continue_1">配合 break / continue<a class="headerlink" href="#break-continue_1" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>for i in 0..100 {
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    if i * i &gt; 50 { break; }
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    if i % 2 == 1 { continue; }
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    println(&quot;偶数平方:&quot;, i * i);
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>}
-</code></pre></div>
-<h2 id="loop">loop 无限循环<a class="headerlink" href="#loop" title="Permanent link">&para;</a></h2>
-<p><code>loop</code> 等同于 <code>while true</code>,必须用 <code>break</code> 退出:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>let count = 0;
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>loop {
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    println(&quot;count =&quot;, count);
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    count = count + 1;
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    if count &gt;= 5 { break; }
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>}
-</code></pre></div>
-<h2 id="break">break<a class="headerlink" href="#break" title="Permanent link">&para;</a></h2>
-<p>立即跳出最近的 <code>while</code> / <code>for</code> / <code>loop</code> 循环:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>for i in 0..10 {
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    if i == 5 { break; }
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    println(i);   // 打印 0,1,2,3,4
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>}
-</code></pre></div>
-<h2 id="continue">continue<a class="headerlink" href="#continue" title="Permanent link">&para;</a></h2>
-<p>跳过本次循环体剩余部分,进入下一次迭代:</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>for i in 0..5 {
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    if i == 2 { continue; }
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    println(i);   // 打印 0,1,3,4 (跳过 2)
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>}
-</code></pre></div>
-<h2 id="return">return<a class="headerlink" href="#return" title="Permanent link">&para;</a></h2>
-<p>从函数返回。可带值,也可不带(返回 <code>none</code>):</p>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>fn is_adult(age: i32) -&gt; bool {
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    return age &gt;= 18;
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>}
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>fn greet() {
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    println(&quot;hi&quot;);
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    return;        // 等价于 return none;
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>}
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>fn early_exit(x: i32) -&gt; i32 {
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    if x &lt; 0 { return -1; }
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    if x == 0 { return 0; }
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    x * 2
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>}
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">隐式返回</p>
-<p>函数最后一条表达式的值会作为隐式返回值。<code>return</code> 用于提前退出。</p>
-</div>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>fn double(x: i32) -&gt; i32 {
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    x * 2          // 隐式返回
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>}
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>fn explicit_double(x: i32) -&gt; i32 {
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    return x * 2;  // 显式返回
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>}
-</code></pre></div>
-<h2 id="_2">嵌套循环<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>// 打印九九乘法表
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>for i in 1..10 {
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    for j in 1..10 {
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        print(i * j, &quot; &quot;);
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    }
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    println(&quot;&quot;);
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>}
-</code></pre></div>
-<h3 id="break_1">break 只跳出最近一层<a class="headerlink" href="#break_1" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>for i in 0..3 {
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    for j in 0..3 {
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        if j == 1 { break; }   // 只跳出内层
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        println(i, j);
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    }
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>}
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">v0.1 限制</p>
-<p>v0.1 暂不支持带标签的 <code>break 'outer</code> / <code>continue 'outer</code>。后续版本会加入。</p>
-</div>
-<h2 id="_3">综合示例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="fizzbuzz">FizzBuzz<a class="headerlink" href="#fizzbuzz" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>for n in 1..16 {
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    if n % 15 == 0 {
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>        println(&quot;FizzBuzz&quot;);
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    } else if n % 3 == 0 {
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        println(&quot;Fizz&quot;);
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    } else if n % 5 == 0 {
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>        println(&quot;Buzz&quot;);
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    } else {
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>        println(n);
-<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>    }
-<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>}
-</code></pre></div>
-<h3 id="_4">二分查找<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>fn binary_search(nums: list, target: i32) -&gt; i32 {
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    let lo = 0;
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    let hi = len(nums);
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    while lo &lt; hi {
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>        let mid = (lo + hi) / 2;
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>        if nums[mid] == target {
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>            return mid;
-<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>        } else if nums[mid] &lt; target {
-<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>            lo = mid + 1;
-<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>        } else {
-<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>            hi = mid;
-<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>        }
-<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>    }
-<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
-<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>    return -1;
-<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>}
-<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>
-<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>let arr = [1, 3, 5, 7, 9, 11, 13];
-<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>let idx = binary_search(arr, 7);
-<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>println(&quot;找到索引:&quot;, idx);   // 3
-</code></pre></div>
-<h2 id="_5">下一步<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../functions/">函数</a></li>
-<li><a href="../collections/">列表与字符串</a></li>
-</ul>
+<h1 id="_1">函数参考<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Link 的内置函数和标准库函数完整参考。</p>
+<h2 id="_2">内置函数<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>编译器和运行时直接提供，无需导入。</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>签名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>println</code></td>
+<td><code>println(value: i64)</code></td>
+<td>打印整数并换行</td>
+</tr>
+<tr>
+<td><code>str_concat</code></td>
+<td><code>str_concat(left: str, right: str) -&gt; str</code></td>
+<td>拼接两个字符串</td>
+</tr>
+<tr>
+<td><code>str_len</code></td>
+<td><code>str_len(s: str) -&gt; i64</code></td>
+<td>字符串长度</td>
+</tr>
+<tr>
+<td><code>str_eq</code></td>
+<td><code>str_eq(a: str, b: str) -&gt; bool</code></td>
+<td>字符串相等比较</td>
+</tr>
+<tr>
+<td><code>str_substring</code></td>
+<td><code>str_substring(s: str, start: i64, end: i64) -&gt; str</code></td>
+<td>提取子字符串</td>
+</tr>
+<tr>
+<td><code>str_char_code</code></td>
+<td><code>str_char_code(s: str, index: i64) -&gt; i64</code></td>
+<td>获取字符 ASCII 码</td>
+</tr>
+<tr>
+<td><code>file_read</code></td>
+<td><code>file_read(path: str) -&gt; str</code></td>
+<td>读取文件内容</td>
+</tr>
+<tr>
+<td><code>file_write</code></td>
+<td><code>file_write(path: str, content: str) -&gt; i64</code></td>
+<td>写入文件，返回 1 成功 0 失败</td>
+</tr>
+<tr>
+<td><code>args_len</code></td>
+<td><code>args_len() -&gt; i64</code></td>
+<td>命令行参数数量</td>
+</tr>
+<tr>
+<td><code>arg</code></td>
+<td><code>arg(index: i64) -&gt; str</code></td>
+<td>获取第 index 个命令行参数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">标准库<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>通过 <code>use</code> 导入：<code>use std::math;</code> <code>use std::string;</code></p>
+<h3 id="stdmath">std::math<a class="headerlink" href="#stdmath" title="Permanent link">&para;</a></h3>
+<p><strong>导入</strong>：<code>use std::math;</code></p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>签名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>absolute</code></td>
+<td><code>absolute(value: i64) -&gt; i64</code></td>
+<td>绝对值</td>
+</tr>
+<tr>
+<td><code>minimum</code></td>
+<td><code>minimum(a: i64, b: i64) -&gt; i64</code></td>
+<td>取最小值</td>
+</tr>
+<tr>
+<td><code>maximum</code></td>
+<td><code>maximum(a: i64, b: i64) -&gt; i64</code></td>
+<td>取最大值</td>
+</tr>
+<tr>
+<td><code>clamp</code></td>
+<td><code>clamp(value: i64, lo: i64, hi: i64) -&gt; i64</code></td>
+<td>限制值在 [lo, hi] 范围</td>
+</tr>
+<tr>
+<td><code>fib</code></td>
+<td><code>fib(n: i64) -&gt; i64</code></td>
+<td>第 n 个斐波那契数</td>
+</tr>
+<tr>
+<td><code>factorial</code></td>
+<td><code>factorial(n: i64) -&gt; i64</code></td>
+<td>n 的阶乘</td>
+</tr>
+<tr>
+<td><code>ipow</code></td>
+<td><code>ipow(base: i64, exp: i64) -&gt; i64</code></td>
+<td>base 的 exp 次幂</td>
+</tr>
+<tr>
+<td><code>is_even</code></td>
+<td><code>is_even(n: i64) -&gt; bool</code></td>
+<td>是否偶数</td>
+</tr>
+<tr>
+<td><code>is_odd</code></td>
+<td><code>is_odd(n: i64) -&gt; bool</code></td>
+<td>是否奇数</td>
+</tr>
+<tr>
+<td><code>sum</code></td>
+<td><code>sum(from: i64, to: i64) -&gt; i64</code></td>
+<td>从 from 到 to-1 的累加和</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stdstring">std::string<a class="headerlink" href="#stdstring" title="Permanent link">&para;</a></h3>
+<p><strong>导入</strong>：<code>use std::string;</code></p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>签名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>starts_with</code></td>
+<td><code>starts_with(s: str, prefix: str) -&gt; bool</code></td>
+<td>s 是否以 prefix 开头</td>
+</tr>
+<tr>
+<td><code>ends_with</code></td>
+<td><code>ends_with(s: str, suffix: str) -&gt; bool</code></td>
+<td>s 是否以 suffix 结尾</td>
+</tr>
+<tr>
+<td><code>contains</code></td>
+<td><code>contains(s: str, needle: str) -&gt; bool</code></td>
+<td>s 是否包含 needle</td>
+</tr>
+<tr>
+<td><code>repeat</code></td>
+<td><code>repeat(s: str, n: i64) -&gt; str</code></td>
+<td>将 s 重复 n 次</td>
+</tr>
+<tr>
+<td><code>is_empty</code></td>
+<td><code>is_empty(s: str) -&gt; bool</code></td>
+<td>字符串是否为空</td>
+</tr>
+<tr>
+<td><code>is_blank</code></td>
+<td><code>is_blank(s: str) -&gt; bool</code></td>
+<td>字符串是否全空白</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stdio">std::io<a class="headerlink" href="#stdio" title="Permanent link">&para;</a></h3>
+<p><strong>导入</strong>：<code>use std::io;</code></p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>签名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read_file</code></td>
+<td><code>read_file(path: str) -&gt; str</code></td>
+<td>读取文件</td>
+</tr>
+<tr>
+<td><code>write_file</code></td>
+<td><code>write_file(path: str, content: str) -&gt; i64</code></td>
+<td>写入文件</td>
+</tr>
+<tr>
+<td><code>read_lines</code></td>
+<td><code>read_lines(path: str) -&gt; str</code></td>
+<td>读取文件（同 read_file）</td>
+</tr>
+<tr>
+<td><code>print_int</code></td>
+<td><code>print_int(value: i64)</code></td>
+<td>打印整数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stdcollections">std::collections<a class="headerlink" href="#stdcollections" title="Permanent link">&para;</a></h3>
+<p><strong>导入</strong>：<code>use std::collections;</code></p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>签名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sum_list</code></td>
+<td><code>sum_list(xs: LinkList) -&gt; i64</code></td>
+<td>列表元素求和</td>
+</tr>
+<tr>
+<td><code>count_if</code></td>
+<td><code>count_if(xs: LinkList, pred: fn(i64) -&gt; bool) -&gt; i64</code></td>
+<td>满足条件的元素个数</td>
+</tr>
+<tr>
+<td><code>find</code></td>
+<td><code>find(xs: LinkList, pred: fn(i64) -&gt; bool) -&gt; i64</code></td>
+<td>查找第一个满足条件的索引，-1 表示未找到</td>
+</tr>
+<tr>
+<td><code>all</code></td>
+<td><code>all(xs: LinkList, pred: fn(i64) -&gt; bool) -&gt; bool</code></td>
+<td>是否全部满足条件</td>
+</tr>
+<tr>
+<td><code>any</code></td>
+<td><code>any(xs: LinkList, pred: fn(i64) -&gt; bool) -&gt; bool</code></td>
+<td>是否有任一满足条件</td>
+</tr>
+<tr>
+<td><code>reverse</code></td>
+<td><code>reverse(xs: LinkList) -&gt; LinkList</code></td>
+<td>反转列表</td>
+</tr>
+<tr>
+<td><code>max_list</code></td>
+<td><code>max_list(xs: LinkList) -&gt; i64</code></td>
+<td>列表最大值</td>
+</tr>
+<tr>
+<td><code>min_list</code></td>
+<td><code>min_list(xs: LinkList) -&gt; i64</code></td>
+<td>列表最小值</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -2499,12 +2197,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
-        <script src="../../assets/repo-stats.js"></script>
+        <script src="../assets/repo-stats.js"></script>
       
     
   </body>
