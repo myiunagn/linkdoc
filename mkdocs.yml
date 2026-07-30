@@ -77,6 +77,11 @@ nav:
       - WASM 后端: compiler/wasm-backend.md
       - 借用检查器: compiler/borrow-checker.md
       - CLI 使用: compiler/cli.md
+  - 函数参考:
+      - 总览: reference/index.md
+      - 内置函数: reference/builtins.md
+      - std::math: reference/std-math.md
+      - std::string: reference/std-string.md
   - 示例: examples.md
   - 设计规格: spec.md
 

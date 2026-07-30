@@ -13,8 +13,8 @@ hide:
 
 ---
 
-!!! tip "v0.2.0 已发布"
-    当前版本支持:基本类型、控制流、函数、列表、`stream<T>` 数据流、struct/enum 复合类型、async/await、flow 声明块、**全球 12 种编程语言 FFI 互联**、**C/LLVM/Python/WASM 编译器后端**、**借用检查器**、**LSP 语言服务器**、**游戏后端域类型**。
+!!! tip "v1.0.0 已发布 — Copyright (c) 2024 ctost link"
+    当前版本支持:基本类型、控制流、函数、列表、`stream<T>` 数据流、struct/enum 复合类型、async/await、flow 声明块、**全球 12 种编程语言 FFI 互联**、**C/LLVM/Python/WASM 编译器后端**、**借用检查器**、**自举编译器**（Link 编译 Link）、**标准库**（math/string/io/collections）、**LSP 语言服务器**、**游戏后端域类型**。
 
 ## 核心特性
 

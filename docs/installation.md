@@ -1,8 +1,23 @@
 # 安装
 
-## 前置依赖
+## 独立二进制（推荐）
 
-Link 用 Rust 编写,需要 Rust 工具链才能从源码构建。
+v1.0.0 提供独立可执行文件，无需安装 Rust：
+
+1. 从 [Releases](https://github.com/myiunagn/link/releases) 下载 `link.exe`（Windows）或 `link`（macOS/Linux）
+2. 放到 PATH 中的任意目录
+3. 直接使用：`link hello.link`
+
+```bash
+$ link --version
+Link 1.0.0
+Copyright (c) 2024 ctost link
+License: MIT
+```
+
+## 从源码构建
+
+需要 Rust 工具链。
 
 ### Rust 工具链
 
